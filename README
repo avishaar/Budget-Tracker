@@ -1,13 +1,12 @@
-<h1>BUDGET TRACKER APP</h1>
+##BUDGET TRACKER APP
 
-<h2>Overview:</h2>
-<h3>This is an application that helps you keep track of your expenses and stay on budget. You can set a desired budget and add expenses with a name. You can see how much money you spent so far and how much you have remaining for your budget. If the budget is gone over, the "remaining" box will turn an alarming red.</h3>
+This is an application that helps you keep track of your expenses and stay on budget. You can set a desired budget and add expenses with a name. You can see how much money you spent so far and how much you have remaining for your budget. If the budget is gone over, the "remaining" box will turn an alarming red.
 
-<h2>How to Run:</h2>
+How to Run:
 
-<h3>npm install
-npm start</h3>
+npm install
+npm start
 
-<h2>Credits:</h2>
+Credits:
 
-<h3>https://www.freecodecamp.org/news/react-budget-tracker-app/</h3>
+https://www.freecodecamp.org/news/react-budget-tracker-app/
