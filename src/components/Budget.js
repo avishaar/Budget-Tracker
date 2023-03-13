@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import EditBudget from './EditBudget';
+import ViewBudget from './ViewBudget';
 
 const Budget = () => {
 
@@ -24,6 +25,7 @@ const Budget = () => {
 			{isEditing ? (
 				<EditBudget handleSaveClick={handleSaveClick} budget={budget} />
 			) : (
+				<ViewBudget handleEditClick={handleEditClick} budget={budget} />
 			)}
 		</div>
 	);
