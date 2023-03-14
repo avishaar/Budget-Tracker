@@ -3,8 +3,9 @@ import React from "react";
 const ViewBudget = (props) => {
     return (
         <>
-            <span>Budget: ${props.budget}</span>
-            <button type='button' class='btn btn-primary' onClick={props.handleEditClick}>Edit</button>
+            <h3 id='budget-text'>Budget: </h3>
+            <h1 id='budget'>${props.budget}</h1>
+            <button type='button' class='btn btn-outline-success' onClick={props.handleEditClick}>Edit</button>
         </>
     );
 };
