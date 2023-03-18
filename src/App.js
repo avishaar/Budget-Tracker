@@ -5,11 +5,29 @@ import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
+import Login from './components/Firebase/Login';
+import Register from './components/Firebase/Register';
+import Reset from './components/Firebase/Reset';
+import Dashboard from './components/Firebase/Dashboard';
 import { AppProvider } from './context/AppContext';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import ProgressBar from './components/Progress';
 
+
 const App = () => {
-	return (
+	
+  return (
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/reset" element={<Reset />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </div>
+  ) (
     <AppProvider>
       <div className='container'>
         <h1 className='mt-3'>My Budget Planner</h1>
