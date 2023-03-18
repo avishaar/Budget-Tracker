@@ -6,6 +6,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
 import { AppProvider } from './context/AppContext';
+// import ProgressBar from './components/Progress';
 
 const App = () => {
 	return (
@@ -35,6 +36,9 @@ const App = () => {
             <AddExpenseForm />
           </div>
         </div>
+        {/* <div>
+            <ProgressBar />
+        </div> */}
       </div>
     </AppProvider>
   )
