@@ -1,28 +1,11 @@
-// import React from "react";
-// import { useContext, AppContext } from "react";
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
-// const ProgressBar = (props) => {
+const WithLabelExample = () => {
+    
+    const now = 100;
+  
+    return (
+    <ProgressBar variant='success' now={now} label={`${now}%`} />);
+}
 
-//   const { expenses } = useContext(AppContext);
-
-//   const totalExpenses = expenses.reduce((total, item) => {
-//     return (total += item.cost);
-//   }, 0);
-
-// return (
-
-//     <div class="progress">
-//   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow={totalExpenses}
-//   aria-valuemin="0" aria-valuemax="100" >
-//     {totalExpenses}
-//   </div>
-// </div>
-
-
-
-
-// )
-
-// };
-
-// export default ProgressBar;
+export default WithLabelExample;

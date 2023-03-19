@@ -5,8 +5,12 @@
     color: darkslategrey;
 }
 
-#top-row, #expenses {
-    padding: 2% 3% 2%;
+#top-row {
+    padding: 0% 3% 2%;
+}
+
+#expenses {
+    padding: 5% 3% 2%;
 }
 
 #budget  {
@@ -24,14 +28,14 @@
 }
 
 #amount  {
-    font-size: 100px;
+    font-size: 90px;
     font-weight:700;
 
     color: white;
 }
 
 #r-amount, #spent-amount {
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 700;
     color: darkslategrey
 }
@@ -50,8 +54,8 @@ body{
     background: linear-gradient(
       to bottom,
       rgb(70, 198, 166) 0px,
-      rgb(71, 201, 166)320px,
-      white 320px,
+      rgb(71, 201, 166)365px,
+      white 365px,
       white 200px
     );
   } 

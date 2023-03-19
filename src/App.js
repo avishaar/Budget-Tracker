@@ -12,7 +12,7 @@ import AddExpenseForm from './components/AddExpenseForm';
 import { AppProvider } from './context/AppContext';
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
-// import ProgressBar from './components/Progress';
+import WithLabelExample from './components/Progress';
 import { GiTakeMyMoney } from 'react-icons/gi'
 
 
@@ -44,6 +44,9 @@ const App = () => {
             <ExpenseTotal />
           </div>
         </div>
+        <div>
+            <WithLabelExample />
+        </div>
         <h3 className='mt-3' id='expenses'>Expenses</h3>
         <div className='row mt-3'>
           <div className='col-sm' id='expense-list'>
@@ -56,9 +59,6 @@ const App = () => {
             <AddExpenseForm />
           </div>
         </div>
-        {/* <div>
-            <ProgressBar />
-        </div> */}
       </div>
     </AppProvider>
   )
