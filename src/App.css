@@ -2,39 +2,45 @@
     font-size: x-large;
     padding-top: 5%;
     padding-left: 3%;
+    color: darkslategrey;
 }
 
-#top-row {
+#top-row, #expenses {
     padding: 2% 3% 2%;
 }
 
-#budget {
+#budget  {
     font-size: 20px;
-    font-weight:700;
+    font-weight:500;
 
     color: white;
 }
 
-#amount {
+#remaining-text, #spent {
+    font-size: 20px;
+    font-weight:500;
+
+    color: darkslategrey;
+}
+
+#amount  {
     font-size: 100px;
     font-weight:700;
 
     color: white;
 }
 
-#expenses {
-    padding: 2% 3% 2%;
+#r-amount, #spent-amount {
+    font-size: 90px;
+    font-weight: 700;
+    color: darkslategrey
 }
 
-#expense-list {
-    padding: 0% 3% 2%;
+#remaining {
+    padding-top: 30%;
 }
 
-#add-form {
-    padding: 0% 3% 2%;
-}
-
-#add {
+#expense-list, #add-form, #add {
     padding: 0% 3% 2%;
 }
 

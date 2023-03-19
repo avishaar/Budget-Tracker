@@ -8,11 +8,13 @@ const RemainingBudget = () => {
 		return (total += item.cost);
 	}, 0);
 
-	const alertType = totalExpenses > budget ? 'alert-danger' : 'alert-success';
+	// const alertType = totalExpenses > budget ? 'alert-danger' : 'alert-success';
 
 	return (
-		<div class={`alert ${alertType}, alert alert-success p-3 d-flex align-items-center justify-content-between`}>
-			<span>Remaining: ${budget - totalExpenses}</span>
+		// <div class={`alert ${alertType}, alert alert-success p-3 d-flex align-items-center justify-content-between`}>
+		<div id='remaining' class='p-3 d-flex align-items-center justify-content-between'>
+			<span id='remaining-text'>Remaining: </span>
+			<span id='r-amount'>${budget - totalExpenses}</span>
 		</div>
 	);
 };
