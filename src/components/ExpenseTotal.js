@@ -10,10 +10,12 @@ const ExpenseTotal = () => {
 	}, 0);
 
 	return (
-		<div className='alert alert-primary'>
+		<div className='alert alert-success p-3 d-flex align-items-center justify-content-between'>
 			<span id='spent'>Spent so far: ${totalExpenses}</span>
 		</div>
 	);
 };
+
+
 
 export default ExpenseTotal;

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
+
 function Dashboard() {
   const [user, loading] = useAuthState(auth);
   const [name, setName] = useState("");
@@ -23,7 +24,7 @@ function Dashboard() {
     if (loading) return;
     if (!user) return navigate("/");
     fetchUserName();
-  }, [user, loading]);
+  } );
   return (
     <div className="dashboard">
        <div className="dashboard__container">
