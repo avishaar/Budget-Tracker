@@ -54,7 +54,7 @@ const AddExpenseForm = () => {
 				<div className='col-sm'>
 					<label for='category'>Category</label>
 					<select class="form-select" aria-label="Default select example" id='category' value={category} onChange={(event) => setCategory(event.target.value)}>
-						<option selected disabled>Choose an expense category</option>
+						<option selected>Choose an expense category</option>
 						<option value="Food">Food</option>
 						<option value="Travel">Travel</option>
 						<option value="Clothing">Clothing</option>

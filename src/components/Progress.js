@@ -13,8 +13,8 @@ const WithLabelExample = () => {
 	}, 0);
 
 
-    const now = Math.ceil(((budget-totalExpenses) / budget) * 100);
-    
+    const now = Math.ceil(((totalExpenses) / budget) * 100);
+    //make percent go up
     console.log(expenses) 
     console.log(budget)
     
