@@ -33,6 +33,7 @@ console.log(props);
                 <span>
                     ${props.cost}
                 </span>
+                {' '}
                 <TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete>
             </div>
         </li>

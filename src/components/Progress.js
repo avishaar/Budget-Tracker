@@ -1,11 +1,9 @@
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-// import { useContext, AppContext } from 'react';
-// import ExpenseTotal from './ExpenseTotal';
 
 const WithLabelExample = () => {
-    //insert logic here to make percentage 
+
     const { expenses, budget } = useContext(AppContext);
 
     const totalExpenses = expenses.reduce((total, item) => {
@@ -14,12 +12,9 @@ const WithLabelExample = () => {
 
 
     const now = Math.ceil(((totalExpenses) / budget) * 100);
-    //make percent go up
-    console.log(expenses) 
-    console.log(budget)
     
     return (
-        
+    
     <ProgressBar variant='success' now={now} label={`${now}%`} />);
 }
 
