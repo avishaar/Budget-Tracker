@@ -7,6 +7,7 @@ const AddExpenseForm = () => {
 
 	const [name, setName] = useState('');
 	const [cost, setCost] = useState('');
+	const [category, setCategory] = useState('');
 
 
 	const onSubmit = (event) => {
@@ -16,6 +17,7 @@ const AddExpenseForm = () => {
 			id: uuidv4(),
 			name: name,
 			cost: parseInt(cost),
+			category: category,
 		};
 
 		dispatch({
@@ -51,7 +53,7 @@ const AddExpenseForm = () => {
 				</div>
 				<div className='col-sm'>
 					<label for='category'>Category</label>
-					<select class="form-select" aria-label="Default select example">
+					<select class="form-select" aria-label="Default select example" id='category' value={category} onChange={(event) => setCategory(event.target.value)}>
 						<option selected disabled>Choose an expense category</option>
 						<option value="Food">Food</option>
 						<option value="Travel">Travel</option>

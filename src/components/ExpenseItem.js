@@ -5,6 +5,7 @@ import { FaCar } from 'react-icons/fa';
 import { MdFastfood } from 'react-icons/md';
 import { IoIosShirt } from 'react-icons/io'
 import { BsHouseFill } from 'react-icons/bs';
+import { MdAttachMoney } from 'react-icons/md';
 
 const ExpenseItem = (props) => {
 
@@ -16,16 +17,17 @@ const ExpenseItem = (props) => {
             payload: props.id,
         });
     };
-
+console.log(props);
     return (
         <li className='list-group-item d-flex justify-content-between align-items-center'>
             <div>
-                <FaCar size='1.5em'/>
-                <MdFastfood size='1.5em'/>
-                <IoIosShirt size='1.5em'/>
-                <BsHouseFill size='1.5em'/>
-                {/* need to make an if statement? so that depending on category icon can change */}
-                {props.name}
+                {props.category === 'Travel' ? <FaCar size='1.5em'/> :
+                props.category === 'Clothing' ?  <IoIosShirt size='1.5em'/> :
+                props.category === 'Food' ?  <MdFastfood size='1.5em'/> :  
+                props.category === 'Household Items' ? <BsHouseFill size='1.5em'/> :
+                <MdAttachMoney size='1.5em'/>}
+            {' '}
+            {props.name}
             </div>
             <div>
                 <span>
