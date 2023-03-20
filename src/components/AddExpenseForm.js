@@ -50,6 +50,16 @@ const AddExpenseForm = () => {
 					></input>
 				</div>
 				<div className='col-sm'>
+					<label for='category'>Category</label>
+					<select class="form-select" aria-label="Default select example">
+						<option selected disabled>Choose an expense category</option>
+						<option value="Food">Food</option>
+						<option value="Travel">Travel</option>
+						<option value="Clothing">Clothing</option>
+						<option value="Household Items">Household Items</option>
+					</select>
+				</div>
+				<div className='col-sm'>
 					<button type='submit' className='btn btn-success mt-3'>
 						Save
 					</button>
