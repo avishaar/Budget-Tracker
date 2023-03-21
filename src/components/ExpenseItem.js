@@ -17,7 +17,7 @@ const ExpenseItem = (props) => {
             payload: props.id,
         });
     };
-console.log(props);
+
     return (
         <li className='list-group-item d-flex justify-content-between align-items-center'>
             <div>
